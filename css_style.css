@@ -1,0 +1,48 @@
+*{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.top{
+background-color: grey;
+border: 1px solid darkgrey;
+}
+#middle{
+    background-color: lightgray;
+    border: 1px solid darkgrey; 
+}
+.phone{
+    background-color: lightseagreen;
+    border: 1px solid darkgrey; 
+}
+.tablet{
+    background-color: lightcoral;
+    border: 1px solid darkgrey; 
+}
+.desktop{
+    background-color: rgb(204, 204, 23);
+    border: 1px solid darkgrey;
+}
+@media screen and (max-width:600px){
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1023px){
+    .phone{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media screen and (min-width:1024px){
+    .tablet{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+}
